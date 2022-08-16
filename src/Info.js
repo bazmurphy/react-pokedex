@@ -7,6 +7,6 @@ const Info = () => {
         <p>Green Border = Component</p>
     </div>
     );
-}
+};
 
 export default Info;

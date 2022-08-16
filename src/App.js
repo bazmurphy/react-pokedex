@@ -3,11 +3,11 @@ import "./App.css";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-import Info from "./Info"
+import Info from "./Info";
 
 function App() {
 
-  const abilities = ['Tackle', 'Sand Attack', 'Gust', 'Quick Attack'];
+  const abilities = ["Tackle", "Sand Attack", "Gust", "Quick Attack"];
   const date = new Date().toLocaleDateString();
 
   return (

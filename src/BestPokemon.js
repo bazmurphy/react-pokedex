@@ -10,7 +10,7 @@ const BestPokemon = (props) => {
 
   // const abilities = ['Tackle', 'Sand Attack', 'Gust', 'Quick Attack'];
 
-  console.log(`BestPokemon Component Props: ${props}`)
+  console.log(`BestPokemon Component Props: ${props}`);
 
   return (
     <div>
@@ -24,6 +24,6 @@ const BestPokemon = (props) => {
       </ul>
     </div>
   );
-}
+};
 
 export default BestPokemon;
