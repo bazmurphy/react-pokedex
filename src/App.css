@@ -45,6 +45,10 @@ header > img {
   font-size: 0.8rem;
 }
 
+.favourite-pokemon > span {
+  font-weight: bold;
+}
+
 .best-pokemon-container {
   font-size: 0.8rem;
 }
@@ -61,4 +65,13 @@ header > img {
 
 .caught-pokemon-container {
   font-size: 0.8rem;
+}
+
+.caught-pokemon-button {
+  margin-top: 0.5rem;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.6rem;
 }

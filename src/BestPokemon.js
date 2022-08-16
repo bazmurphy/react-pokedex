@@ -14,7 +14,7 @@ const BestPokemon = (props) => {
 
   return (
     <div className="best-pokemon-container">
-      <p className="favourite-pokemon">My favourite POKéMON is Gengar</p>
+      <p className="favourite-pokemon">My favourite POKéMON is <span>Gengar</span></p>
       <p className="abilities">Abilities:</p>
         <ul className="abilities-list">
         { props.abilities.map((element, index) => <li key={index}>{element}</li>) }

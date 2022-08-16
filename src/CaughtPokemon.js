@@ -6,9 +6,16 @@ const CaughtPokemon = (props) => {
 
     // console.log(`CaughtPokemon Component Props: ${props}`);
 
+    const [caught, setCaught] = React.useState(0);
+
+    function catchPokemon() {
+        setCaught((prevCaught) => prevCaught + 1);
+    }
+
     return (
         <div className="caught-pokemon-container">
-            <p className="caught-pokemon">Caught 0 POKéMON on {props.date}</p>
+            <p className="caught-pokemon-text">Caught {caught} POKéMON on {props.date}</p>
+            <button onClick={catchPokemon} className="caught-pokemon-button">I caught a POKéMON !</button>
         </div>
     );
 };
