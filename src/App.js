@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+// import PokedexButtons from "./PokedexButtons";
 import Logo from "./Logo";
 import Description from "./Description";
 import BestPokemon from "./BestPokemon";
@@ -11,17 +12,17 @@ function App() {
   const date = new Date().toLocaleDateString();
 
   const logWhenClicked = () => {
-    console.log("I have been clicked");
+    // console.log("I have been clicked");
+    alert("I have been clicked");
   };
 
   return (
     <div className="App">
-      {/* <SillyButtonsTop /> */}
+      {/* <PokedexButtons /> */}
       <Logo appName="Pokedex" logWhenClicked={logWhenClicked}/>
       <Description />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
-      {/* <SillyButtonsBottom /> */}
     </div>
   );
 }
