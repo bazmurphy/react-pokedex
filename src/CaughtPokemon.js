@@ -1,13 +1,14 @@
 import React from "react";
 
 const CaughtPokemon = (props) => {
+
     // const date = new Date().toLocaleDateString()
 
-    console.log(`CaughtPokemon Component Props: ${props}`);
+    // console.log(`CaughtPokemon Component Props: ${props}`);
 
     return (
-        <div>
-            <p>Caught 0 Pokemon on {props.date}</p>
+        <div className="caught-pokemon-container">
+            <p className="caught-pokemon">Caught 0 POKéMON on {props.date}</p>
         </div>
     );
 };

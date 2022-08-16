@@ -13,12 +13,16 @@ const Logo = (props) => {
 
     // const appName = "Pokedex"
 
-    console.log(`Logo Component Props: ${props}`);
+    // console.log(`Logo Component Props: ${props}`);
+
+    const logWhenClicked = () => {
+      console.log("I have been clicked");
+    };
 
     return (
-      <header>
+      <header className="logo-container">
         <h1>Welcome to Baz's {props.appName}</h1>
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="Pidgey" />
+        <img onClick={logWhenClicked} src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="Gengar"/>
       </header>
     );
 };

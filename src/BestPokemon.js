@@ -10,16 +10,13 @@ const BestPokemon = (props) => {
 
   // const abilities = ['Tackle', 'Sand Attack', 'Gust', 'Quick Attack'];
 
-  console.log(`BestPokemon Component Props: ${props}`);
+  // console.log(`BestPokemon Component Props: ${props}`);
 
   return (
-    <div>
-      <p>My favourite Pokemon is Pidgey</p>
-      <ul>
-        {/* { abilities.map((element, index) => {
-            return <li key={index}>{element}</li>
-          })
-        } */}
+    <div className="best-pokemon-container">
+      <p className="favourite-pokemon">My favourite POKéMON is Gengar</p>
+      <p className="abilities">Abilities:</p>
+        <ul className="abilities-list">
         { props.abilities.map((element, index) => <li key={index}>{element}</li>) }
       </ul>
     </div>

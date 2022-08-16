@@ -1,15 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+@font-face {
+  font-family: 'Pokemon GB';
+  src: url('../public/pokemongb.woff') format('woff2'),
+      url('../public/pokemongb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#root {
+  margin-top: 1rem;
+  border-top: 4rem solid rgba(255,0,0,0.5);
+  border-bottom: 4rem solid rgba(255,0,0,0.5);
+  border-left: 2rem solid rgba(255,0,0,0.5);
+  border-right: 2rem solid rgba(255,0,0,0.5);
+  border-radius: 1rem;
+  max-width: 600px;
+}
 
 .App {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  border: 0.4rem solid purple;
-  border-radius: 0.4rem;
+  font-family: 'Pokemon GB', sans-serif;
+  border: 1rem solid lightgray;
 }
 
 .App > * {
-  background-color: rgb(220, 220, 220);
-  border: 0.4rem solid green;
-  border-radius: 0.4rem;
+  background-color: #75903f;
+  padding: 1rem;
+}
+
+header > h1 {
+  font-size: 1rem;
+}
+
+header > img {
+  display: block;
+  margin: 0 auto;
+  width : 256px;
+}
+
+.description-container {
+  font-size: 0.8rem;
+}
+
+.best-pokemon-container {
+  font-size: 0.8rem;
+}
+
+.best-pokemon-container .abilities {
+  margin-top: 1rem;
+}
+
+.best-pokemon-container > ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+
+.caught-pokemon-container {
+  font-size: 0.8rem;
 }
