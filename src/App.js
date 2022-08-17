@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-// import PokedexButtons from "./PokedexButtons";
 import Logo from "./Logo";
-import Description from "./Description";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 // import PokemonMoves from "./PokemonMoves";
 import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 function App() {
 
@@ -15,18 +14,17 @@ function App() {
 
   const logWhenClicked = () => {
     // console.log("I have been clicked");
-    alert("I have been clicked");
+    alert("Gengar Gengar Gengar!");
   };
 
   return (
     <div className="App">
-      {/* <PokedexButtons /> */}
       <Logo appName="Pokedex" logWhenClicked={logWhenClicked}/>
-      <Description />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
       {/* <PokemonMoves /> */}
       <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }

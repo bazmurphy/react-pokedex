@@ -1,11 +1,5 @@
 import React from "react";
 
-// function BestPokemon() {
-//   return (
-//     <p>My favourite Pokemon is Pikachu</p>
-//   )
-// }
-
 const BestPokemon = (props) => {
 
   // const abilities = ['Tackle', 'Sand Attack', 'Gust', 'Quick Attack'];
@@ -14,9 +8,10 @@ const BestPokemon = (props) => {
 
   return (
     <div className="best-pokemon-container">
-      <p className="favourite-pokemon">My favourite POKéMON is <span>Gengar</span></p>
-      <p className="abilities">Abilities:</p>
-        <ul className="abilities-list">
+      <p className="best-pokemon-heading">My favourite POKéMON is <span>Gengar</span></p>
+      <p className="best-pokemon-description">Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.</p>
+      <p className="best-pokemon-abilities-heading">Abilities:</p>
+        <ul className="best-pokemon-abilities-list">
         { props.abilities.map((element, index) => <li key={index}>{element}</li>) }
       </ul>
     </div>
