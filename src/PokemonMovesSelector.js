@@ -17,6 +17,6 @@ const PokemonMovesSelector = () => {
         {id ? <PokemonMoves pokemonId={id} /> : null}
     </div>
   );
-}
+};
 
 export default PokemonMovesSelector;
