@@ -5,6 +5,8 @@ import Logo from "./Logo";
 import Description from "./Description";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+// import PokemonMoves from "./PokemonMoves";
+import PokemonMovesSelector from "./PokemonMovesSelector";
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
       <Description />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
+      {/* <PokemonMoves /> */}
+      <PokemonMovesSelector />
     </div>
   );
 }
