@@ -18,13 +18,13 @@ const PokemonMoves = (props) => {
               <p className="pokemon-moves-text"><span>{pokemonData.name[0].toUpperCase() + pokemonData.name.slice(1)}</span>'s moves:</p>
               <ul className="pokemon-moves-list">
                 { pokemonData.moves
-                  .filter(element => element.version_group_details[0].move_learn_method.name === "level-up")
+                  .filter((element) => element.version_group_details[0].move_learn_method.name === "level-up")
                   // && element.version_group_details[0].version_group.name === "red-blue"
                   .sort((a,b) => a.version_group_details[0].level_learned_at - b.version_group_details[0].level_learned_at)
                   .map((element, index) => {
                     return (
                       <li key={index} className="pokemon-moves-list-item">{element.move.name}</li>
-                    )
+                    );
                   })
                 }
               </ul>
