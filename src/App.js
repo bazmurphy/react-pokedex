@@ -18,13 +18,18 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Logo appName="Pokedex" logWhenClicked={logWhenClicked}/>
-      <BestPokemon abilities={abilities} />
-      <CaughtPokemon date={date} />
-      {/* <PokemonMoves /> */}
-      <PokemonMovesSelector />
-      <PokemonCity />
+    <div className="pokedex-container">
+      <div className="pokedex-decoration">
+        <img className="pokedex-decoration-image" src="../pokedex-buttons.png" alt="pokedex buttons" />
+      </div>
+      <div className="App">
+        <Logo appName="Pokedex" logWhenClicked={logWhenClicked}/>
+        <BestPokemon abilities={abilities} />
+        <CaughtPokemon date={date} />
+        {/* <PokemonMoves /> */}
+        <PokemonMovesSelector />
+        <PokemonCity />
+      </div>
     </div>
   );
 }
