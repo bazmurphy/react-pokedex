@@ -30,7 +30,7 @@
 .App > * {
   background-color: #75903f;
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 /* Logo.js */
@@ -190,17 +190,12 @@
 }
 
 /* Fun Styling */
-
 .pokedex-container {
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: #ed1e24;
-  /* border-top: 1rem solid #ed1e24;
-  border-bottom: 2rem solid #ed1e24;
-  border-left: 2rem solid #ed1e24;
-  border-right: 2rem solid #ed1e24; */
-  /* rgba(255,0,0,0.65); */
 }
+
 .pokedex-decoration {
   background-color: #ed1e24;
 }
