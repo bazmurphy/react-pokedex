@@ -213,4 +213,5 @@
 .pokemon-gif-image {
   width: 100%;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
