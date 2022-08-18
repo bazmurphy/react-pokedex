@@ -204,3 +204,13 @@
   display: block;
   padding-bottom: 0.5rem;
 }
+
+/* PokemonGif.js */
+.pokemon-gif-container {
+  font-size: 0.8rem;  
+}
+
+.pokemon-gif-image {
+  width: 100%;
+  cursor: pointer;
+}

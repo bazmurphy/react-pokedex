@@ -6,6 +6,7 @@ import CaughtPokemon from "./CaughtPokemon";
 // import PokemonMoves from "./PokemonMoves";
 import PokemonMovesSelector from "./PokemonMovesSelector";
 import PokemonCity from "./PokemonCity";
+import PokemonGif from "./PokemonGif";
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
         {/* <PokemonMoves /> */}
         <PokemonMovesSelector />
         <PokemonCity />
-      </div>
+        <PokemonGif />
+        </div>
     </div>
   );
 }
