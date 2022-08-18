@@ -10,6 +10,13 @@ const PokemonMoves = (props) => {
           .then((data) => setPokemonData(data));
   }, [props.pokemonId]);
 
+  const adjustMoveString = (string) => {
+    return string
+            .split("-")
+            .map((element) => element[0].toUpperCase() + element.slice(1))
+            .join(" ");
+  };
+
   return (
     <div className="pokemon-moves-container">
       {pokemonData ? (
@@ -23,7 +30,7 @@ const PokemonMoves = (props) => {
                 .sort((a,b) => a.version_group_details[0].level_learned_at - b.version_group_details[0].level_learned_at)
                 .map((element, index) => {
                   return (
-                    <li key={index} className="pokemon-moves-list-item">{element.move.name}</li>
+                    <li key={index} className="pokemon-moves-list-item">{adjustMoveString(element.move.name)}</li>
                   );
                 })
               }
